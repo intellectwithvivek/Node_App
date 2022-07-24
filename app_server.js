@@ -15,8 +15,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // simple route
-app.get("/", (res) => {
-  res.json({ message: "Welcome to application." });
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to Node_App!" });
 });
 
 // set port, listen for requests
